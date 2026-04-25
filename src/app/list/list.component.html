@@ -1,0 +1,24 @@
+<div class="card">
+  <h2>📋 List Page</h2>
+
+  <p class="info">
+    Current URL Query Params:
+    <span>{{ route.snapshot.queryParams | json }}</span>
+  </p>
+
+  <button class="btn primary" (click)="setListQuery()">
+    Set List Query: ?search=phone&page=2
+  </button>
+
+  <h3>Navigate to Details with:</h3>
+
+  <div class="btn-group">
+    <button class="btn" (click)="goReplace()">Replace</button>
+    <button class="btn" (click)="goPreserve()">Preserve</button>
+    <button class="btn" (click)="goMerge()">Merge</button>
+  </div>
+
+  <p class="hint">
+    Try URL: <code>/list?search=phone&page=2</code>
+  </p>
+</div>

@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+.app-container {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.page-box {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.info {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.info span {
+  color: #333;
+  font-weight: bold;
+}
+
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #eee;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.primary {
+  background: #007bff;
+  color: white;
+}
+
+.primary:hover {
+  background: #0056b3;
+}
+
+.hint {
+  margin-top: 15px;
+  color: gray;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
