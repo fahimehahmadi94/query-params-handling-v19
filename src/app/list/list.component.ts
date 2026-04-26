@@ -6,9 +6,7 @@ import {JsonPipe} from '@angular/common';
 @Component({
   standalone: true,
   selector: 'app-list',
-  imports: [
-    JsonPipe
-  ],
+  imports: [ JsonPipe],
   templateUrl: './list.component.html'
 })
 export class ListComponent {
@@ -19,27 +17,27 @@ export class ListComponent {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { search: 'phone', page: 2 },
-      queryParamsHandling: 'replace',
+  //    queryParamsHandling: 'replace',
       replaceUrl: true,
     });
   }
   goReplace() {
-    this.router.navigate(['/details', 42], {
+    this.router.navigate(['/details'], {
       queryParams: {page: 99},
       queryParamsHandling: 'replace',
     });
   }
 
   goPreserve() {
-    this.router.navigate(['/details', 42], {
-      queryParams: { page: 99, mode: 'preserve' },
+    this.router.navigate(['/details'], {
+      queryParams: {search: 'book', page: 99 ,mode: 'preserve'},
       queryParamsHandling: 'preserve',
     });
   }
 
   goMerge() {
-    this.router.navigate(['/details', 42], {
-      queryParams: { page: 99, mode: 'merge' },
+    this.router.navigate(['/details'], {
+      queryParams: {search: 'book', mode: 'merge'},
       queryParamsHandling: 'merge',
     });
   }
