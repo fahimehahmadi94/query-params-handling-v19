@@ -6,7 +6,8 @@
     <span>{{ route.snapshot.queryParams | json }}</span>
   </p>
 
-  <a class="back-link" routerLink="/list">
+  <a class="back-link" routerLink="/list"
+     [queryParams]="{search: 'phone', page: 2 }">
     ⬅ Back to List
   </a>
 </div>
